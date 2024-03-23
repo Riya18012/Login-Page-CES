@@ -1,0 +1,109 @@
+body {
+    background: url(./mainBGImage.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top:70px;
+}
+
+.container {
+    width: 400px;
+    max-width: 100%;
+    height: 500px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    /* background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,45,0.7904411764705882) 35%, rgba(0,212,255,1) 100%); */
+    background: rgb(134,34,195);
+    background: linear-gradient(0deg, rgba(134,34,195,1) 0%, rgba(45,253,216,1) 100%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:0 auto;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    margin: 30px 0;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2em;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+}
+
+p > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+p > a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 20px 0; /* Adjusted margin */
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
